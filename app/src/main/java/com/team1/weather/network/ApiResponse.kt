@@ -11,6 +11,6 @@ interface ApiResponse{
     @GET("weather")
     fun getCityData(@Query("q") city: String): Call<CurrentWeatherResponse>
 
-    @GET("data/2.5/forecast?&units=metric&appid=$API_KEY")
+    @GET("forecast")
     fun getForecastData(@Query("q")city: String): Call<ForecastResponse>
 }

@@ -7,5 +7,6 @@ data class CurrentWeatherResponse(
     @SerializedName("name") var cityName: String,
     @SerializedName("main") var mainDetails: Main,
     @SerializedName("wind") var windDetails: Wind,
-    @SerializedName("sys") var sunInfo: Sys
+    @SerializedName("sys") var sunInfo: Sys,
+    @SerializedName("list") var forecast: List<ForecastDetail>
 )
